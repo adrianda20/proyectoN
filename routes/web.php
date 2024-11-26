@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 route::get('producto/create',[ProductoController::class, 'create'])->name('producto.create');
 route::post('producto/store',[ProductoController::class, 'store'])->name('producto.store');
 route::get('producto',[ProductoController::class, 'index'])->name('producto.index');
